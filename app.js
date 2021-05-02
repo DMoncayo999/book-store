@@ -21,4 +21,9 @@ app.use((req, res, next) => {
   res.status(404).render('404', { pageTitle: 'Page Not Found' });
 });
 
+app.get('/', (req, res, next) => {
+     // This is the primary index, always handled last. 
+     res.render('index', {title: 'Welcome to my Book Store repo', path: '/'});
+})
+    
 app.listen(3000);
