@@ -11,7 +11,7 @@ router.get('/book_display', (req, res, next) => {
   res.render('book_display', {
     // prods: products,
     pageTitle: 'Display Book',
-    path: '/admin/book_display',
+    path: '/',
     // hasProducts: products.length > 0,
     title: req.body.title, 
     summary: req.body.summary,
@@ -25,7 +25,7 @@ router.post('/book_display', (req, res, next) => {
   res.render('book_display', {
     // prods: products,
     pageTitle: 'Display Book',
-    path: '/admin/book_display',
+    path: '/',
     // hasProducts: products.length > 0,
     title: req.body.title, 
     summary: req.body.summary,
